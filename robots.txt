@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bibicentric.github.io/sitemap.xml
