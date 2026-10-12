@@ -1,0 +1,62 @@
+BIBICENTRIC / BIBI — ACOUSTIC TECHNICAL RIDER
+Prepared October 12, 2026
+
+STATUS: PROPOSED ACOUSTIC SETUP — ARTIST CONFIRMATION REQUIRED
+Use this baseline to coordinate an acoustic performance. Confirm the booked lineup, equipment and schedule with the artist before the event.
+Use a separate event-specific rider for full-band and orchestra-backed shows.
+
+ARTIST CONTACT
+Bibicentric@gmail.com
+https://bibicentric.github.io/
+
+EVENT
+Event name: To be confirmed
+Date / performance time / time zone: To be confirmed
+Venue / location: To be confirmed
+Venue production contact / phone: To be confirmed
+
+PERFORMANCE FORMAT
+Acoustic lineup: BIBI on lead vocals plus one acoustic guitarist or keyboardist.
+The artist must confirm which accompanist, if any, is booked.
+Performance duration / number of sets: To be confirmed
+Instruments and playback sources: To be confirmed
+
+INPUT LIST
+Lead vocal microphone: One wired Shure SM58 or agreed equivalent,
+with an adjustable microphone stand. Wireless is optional by advance agreement.
+Additional vocals and microphone requirements: To be confirmed
+Instrument inputs: One suitable DI for an amplified acoustic guitar;
+or two DI channels for stereo keyboard, subject to the actual instrument outputs.
+Playback device / connectors / stereo or mono inputs: To be confirmed
+Equipment supplied by artist versus venue: To be confirmed
+
+MONITORING
+Monitoring: Two wedges, with separate mixes for singer and accompanist.
+In-ear monitoring should be specified only if the artist confirms that equipment.
+Artist-supplied in-ear equipment, if any: To be confirmed
+
+BACKLINE AND STAGE
+Required instruments / amplifiers / drums / keyboard: To be confirmed
+Minimum usable stage width and depth: To be confirmed
+Stage layout and performer positions: To be confirmed
+Power / stands / seating requirements: To be confirmed
+
+SCHEDULE
+Load-in and setup time: To be confirmed
+Acoustic soundcheck allowance: 30 minutes after setup and equipment readiness.
+Confirm the actual load-in, setup and soundcheck schedule with the venue.
+Rehearsal needs: To be confirmed
+
+CONFIRMATION
+Event-specific specifications: To be confirmed
+Venue acknowledgment: Pending
+Final rider version / date: Pending
+
+Discuss all requirements and substitutions with the artist before confirming the event.
+
+REFERENCE GUIDANCE
+Shure describes the SM58 as a cardioid dynamic microphone for professional vocals:
+https://www.shure.com/en-US/products/microphones/sm58
+Radial explains instrument DI connections and matching DI choice to the source:
+https://www.radialeng.com/what-is-a-direct-box
+The lineup, monitoring and timing above are planning recommendations, not specifications from these sources.
