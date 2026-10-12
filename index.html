@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <title>BIBICENTRIC — Nigerian Soul Singer</title>
+  <meta name="description" content="A soul singer, songwriter, and performer who owns every stage — powerhouse vocals, magnetic presence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BIBICENTRIC — Nigerian Soul Singer" />
+  <meta property="og:description" content="A soul singer, songwriter, and performer who owns every stage — powerhouse vocals, magnetic presence." />
+  <meta property="og:image" content="assets/bibi-red-floral-performance.jpg" />
+  <meta property="og:image:alt" content="BIBI commanding the stage in a black corset gown before a red floral wall" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BIBICENTRIC — Nigerian Soul Singer" />
+  <meta name="twitter:description" content="A soul singer, songwriter, and performer who owns every stage — powerhouse vocals, magnetic presence." />
+  <meta name="twitter:image" content="assets/bibi-red-floral-performance.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      color-scheme:light dark;
+      --ink:#171410;--ink-soft:#4e473e;--paper:#f6f1e8;--paper-2:#ece2d2;--card:#fffaf2;
+      --line:#cfc2ae;--gold:#a06a1f;--gold-2:#d4a75c;--green:#163e32;--green-2:#235d4b;
+      --hero:#101915;--white:#fffdf7;--shadow:0 18px 50px rgba(49,37,21,.12)
+    }
+    @media(prefers-color-scheme:dark){:root{--ink:#f7f0e4;--ink-soft:#c8bcab;--paper:#151714;--paper-2:#20241f;--card:#1c201c;--line:#3d433c;--gold:#dfb263;--gold-2:#f0c87e;--green:#1c4e3f;--green-2:#2c725c;--hero:#0b100e;--white:#fffdf7;--shadow:0 18px 50px rgba(0,0,0,.3)}}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.55;overflow-x:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    button,input{font:inherit}
+    .skip{position:fixed;left:16px;top:16px;z-index:100;background:var(--card);color:var(--ink);padding:10px 14px;transform:translateY(-150%);transition:transform .15s}.skip:focus{transform:translateY(0)}
+    .nav{position:absolute;z-index:10;top:0;left:0;right:0;padding:22px clamp(20px,5vw,76px);display:flex;justify-content:flex-end;gap:26px;color:var(--white);font-size:13px;font-weight:600}
+    .nav a{text-decoration:none;border-bottom:1px solid transparent}.nav a:hover,.nav a:focus{border-color:var(--gold-2)}
+    .hero{min-height:88svh;background:var(--hero);color:var(--white);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);position:relative}
+    .hero-copy{padding:clamp(110px,15vh,170px) clamp(26px,7vw,110px) 72px;display:flex;flex-direction:column;justify-content:center;position:relative}
+    .hero-copy:after{content:"";position:absolute;width:110px;height:1px;background:var(--gold-2);left:clamp(26px,7vw,110px);bottom:52px}
+    .overline{font-size:12px;letter-spacing:.23em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 18px}
+    .hero .overline,.video-sec .overline,.epk .overline,.roots .overline{color:var(--gold-2)}
+    h1,h2,h3,.quote{font-family:"Cormorant Garamond",serif}
+    h1{font-size:clamp(68px,10vw,150px);line-height:.72;letter-spacing:-.055em;margin:0 0 36px;font-weight:600}
+    h1 span{display:block;font-size:.31em;line-height:1.3;letter-spacing:.14em;margin-left:.12em;color:#dbc6a1}
+    .hero-intro{max-width:560px;font-size:clamp(18px,2vw,24px);color:#e8dfd0;margin:0 0 34px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;text-decoration:none;font-size:14px;font-weight:600;border:1px solid var(--gold-2);background:var(--gold-2);color:#17120b}.btn.alt{background:transparent;color:var(--white);border-color:#8b9b92}.btn:hover,.btn:focus{filter:brightness(1.08)}
+    .hero-photo{position:relative;overflow:hidden;min-height:640px;background:#112b23}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 43%;filter:saturate(.88) contrast(1.03)}
+    .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,25,21,.2),transparent 45%),linear-gradient(0deg,rgba(9,13,11,.32),transparent 35%)}
+    .scripture{position:absolute;z-index:2;left:30px;right:30px;bottom:28px;border-top:1px solid rgba(255,255,255,.4);padding-top:16px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;color:#fff}.scripture small{font-family:"DM Sans",sans-serif;font-style:normal;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-left:8px}
+    .section{padding:clamp(72px,9vw,128px) clamp(22px,7vw,110px)}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:44px}.section-head h2{font-size:clamp(44px,6vw,80px);line-height:.95;letter-spacing:-.035em;margin:0}.section-head p{max-width:500px;color:var(--ink-soft);margin:0}
+    .music{background:var(--paper-2)}
+    .release{display:grid;grid-template-columns:minmax(250px,420px) 1fr;gap:clamp(30px,6vw,86px);align-items:center}
+    .cover-wrap{position:relative}.cover-wrap img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;box-shadow:var(--shadow)}.cover-wrap:before{content:"MONOPHOBIA · 2020";position:absolute;z-index:1;top:-14px;right:-14px;background:var(--green);color:#fff;padding:9px 12px;font-size:10px;letter-spacing:.16em}
+    .release-copy h3{font-size:clamp(38px,5vw,66px);line-height:1;margin:0 0 16px}.release-copy>p{font-size:18px;color:var(--ink-soft);max-width:660px}
+    .meta{display:flex;gap:26px;flex-wrap:wrap;margin:28px 0}.meta span{font-size:12px;text-transform:uppercase;letter-spacing:.14em}.meta strong{display:block;font-size:18px;letter-spacing:0;text-transform:none;color:var(--ink)}
+    .players{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}.player{background:var(--card);padding:18px;box-shadow:0 8px 26px rgba(31,24,14,.08)}.player-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.player-head strong{font-size:13px}.player-head a{font-size:12px;color:var(--gold);font-weight:600}.player iframe{width:100%;border:0;border-radius:8px;background:#191414}.spotify iframe{height:352px}.apple iframe{height:352px}
+    .story{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,7vw,100px);align-items:center}.story-image{position:relative}.story-image img{width:100%;max-height:680px;object-fit:cover}.story-image .year{position:absolute;right:-28px;bottom:36px;background:var(--gold-2);color:#1e1609;padding:18px 20px;font-family:"Cormorant Garamond",serif;font-size:30px;line-height:1}.story-copy h2{font-size:clamp(48px,6vw,78px);line-height:.95;margin:0 0 28px}.story-copy p{font-size:17px;color:var(--ink-soft)}.story-copy .lead{font-family:"Cormorant Garamond",serif;font-size:clamp(25px,3vw,36px);line-height:1.25;color:var(--ink)}
+    .quote{font-size:clamp(32px,4vw,56px);line-height:1.1;text-align:center;max-width:930px;margin:0 auto;padding:0 20px}.quote:before{content:"“";color:var(--gold);font-size:1.6em;line-height:0;vertical-align:-.24em;margin-right:4px}.quote.editorial:before{content:none}.quote cite{display:block;font-family:"DM Sans",sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-style:normal;color:var(--ink-soft);margin-top:24px}
+    .video-sec{background:var(--hero);color:var(--white)}.video-sec .section-head p{color:#bfc9c4}.video-grid{display:grid;grid-template-columns:1.5fr .5fr;gap:22px}.video{position:relative;aspect-ratio:16/9;background:#080b0a;overflow:hidden}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-side{border-top:1px solid #5f6c65;border-bottom:1px solid #5f6c65;padding:28px 4px;display:flex;flex-direction:column;justify-content:space-between}.video-side h3{font-size:38px;line-height:1.02;margin:0}.video-side p{color:#cdd3cf}.text-link{color:var(--gold-2);font-weight:600;text-underline-offset:4px}.highlight-row{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:52px}.video-card{min-width:0}.video-card .video{margin-bottom:18px}.video-card h3{font-size:30px;line-height:1.05;margin:0 0 8px}.video-card p{color:#bfc9c4;margin:0 0 14px;font-size:14px}.video-catalog{margin-top:70px;border-top:1px solid #5f6c65}.catalog-group{display:grid;grid-template-columns:minmax(170px,.42fr) 1fr;gap:34px;padding:34px 0;border-bottom:1px solid #45524b}.catalog-group h3{font-size:32px;line-height:1;margin:0}.catalog-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.catalog-link{display:flex;justify-content:space-between;gap:18px;padding:12px 0;border-bottom:1px solid #2d3933;text-decoration:none;font-size:14px}.catalog-link:hover,.catalog-link:focus{color:var(--gold-2)}.catalog-link small{color:#9aa8a1;white-space:nowrap}.catalog-note{display:block;color:#9aa8a1;font-size:12px;margin-top:4px}.extras{display:flex;flex-wrap:wrap;gap:10px}.extras a{padding:10px 13px;border:1px solid #5f6c65;text-decoration:none;font-size:13px}.extras a:hover,.extras a:focus{border-color:var(--gold-2);color:var(--gold-2)}.channel-cta{margin-top:44px;padding:30px 32px;border:1px solid #77837d;display:flex;align-items:center;justify-content:space-between;gap:28px}.channel-cta h3{font-size:36px;line-height:1;margin:0 0 8px}.channel-cta p{color:#cdd3cf;margin:0}.channel-cta .btn{flex:none}
+    .press{background:var(--paper)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:34px}.filter{border:1px solid var(--line);color:var(--ink);background:transparent;padding:10px 15px;cursor:pointer}.filter[aria-pressed="true"]{background:var(--green);color:#fff;border-color:var(--green)}
+    .press-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.press-card{padding:26px;min-height:220px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;transition:background .2s}.press-card:hover{background:var(--card)}.press-card[hidden]{display:none}.press-card time{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}.press-card h3{font-size:28px;line-height:1.05;margin:28px 0 10px}.press-card p{font-size:14px;color:var(--ink-soft);margin:0 0 20px}.press-card a{margin-top:auto;font-size:13px;font-weight:600;text-underline-offset:4px}
+    .appearances{margin-top:42px;padding-top:30px;border-top:1px solid var(--line)}.appearances h3{font-size:34px;margin:0 0 20px}.appear-list{display:flex;flex-wrap:wrap;gap:10px}.appear-list a{padding:10px 13px;border:1px solid var(--line);text-decoration:none;font-size:13px}.appear-list a:hover{border-color:var(--gold)}
+    .epk{background:var(--green);color:#fff}.epk-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,7vw,90px)}.epk h2{font-size:clamp(48px,6vw,76px);line-height:1;margin:0 0 26px}.epk p{color:#dce8e3}.facts{margin:0;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,.25)}.facts li{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:14px}.facts span{color:#b9cfc6}.press-note{margin-top:20px;font-size:12px!important;color:#b9cfc6!important}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,7vw,90px);align-items:start}.contact h2{font-size:clamp(48px,6vw,80px);line-height:.95;margin:0 0 24px}.placeholder{border:1px dashed var(--gold);background:var(--card);padding:24px}.placeholder strong{display:block;font-family:"Cormorant Garamond",serif;font-size:30px;margin-bottom:8px}.placeholder p{margin:0;color:var(--ink-soft)}.newsletter{padding:32px;background:var(--paper-2)}.newsletter h3{font-size:38px;margin:0 0 10px}.newsletter p{color:var(--ink-soft)}.newsletter-slot{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}.newsletter-slot strong{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}.newsletter-slot span{font-size:13px;color:var(--ink-soft)}.coming{display:inline-block;margin-top:16px;padding:9px 12px;background:var(--green);color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase}.socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.socials a{font-weight:600;text-underline-offset:4px}
+    footer{padding:26px clamp(22px,7vw,110px);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;font-size:12px;color:var(--ink-soft)}
+    .back{color:var(--gold);text-decoration:none}
+    @media(max-width:900px){.nav{display:none}.hero{grid-template-columns:1fr;min-height:auto}.hero-copy{min-height:72svh;padding-top:100px}.hero-photo{min-height:72svh}.players,.story,.video-grid,.epk-grid,.contact{grid-template-columns:1fr}.highlight-row{grid-template-columns:repeat(2,1fr)}.catalog-group{grid-template-columns:1fr}.story-image{max-width:620px}.story-image .year{right:-10px}.press-grid{grid-template-columns:repeat(2,1fr)}.video-side{min-height:260px}.section-head{align-items:start;flex-direction:column}.release{grid-template-columns:minmax(220px,360px) 1fr}}
+    @media(max-width:640px){.hero-copy{padding:92px 22px 70px}.hero-copy:after{left:22px}.hero-photo{min-height:72svh}.scripture{left:20px;right:20px}.section{padding:72px 20px}.release{grid-template-columns:1fr}.cover-wrap{max-width:430px}.players,.highlight-row,.catalog-links{grid-template-columns:1fr}.spotify iframe,.apple iframe{height:280px}.highlight-row{margin-top:44px}.video-catalog{margin-top:52px}.catalog-group{gap:18px;padding:28px 0}.catalog-link{align-items:flex-start}.catalog-link small{white-space:normal;text-align:right}.channel-cta{align-items:flex-start;flex-direction:column;padding:26px 22px}.press-grid{grid-template-columns:1fr}.press-card{min-height:190px;padding:22px}.facts li{grid-template-columns:105px 1fr}.contact{gap:48px}footer{flex-direction:column}.hero-intro{font-size:18px}}
+    /* Black, white and gold performance-era redesign */
+    :root{--ink:#0c0b09;--ink-soft:#4f4a43;--paper:#fff;--paper-2:#f3f1ed;--card:#fff;--line:#d7d1c7;--gold:#755014;--gold-2:#d2ab5b;--green:#111;--green-2:#252525;--hero:#080808;--white:#fff;--shadow:0 18px 50px rgba(0,0,0,.12)}
+    @media(prefers-color-scheme:dark){:root{--ink:#f7f5f0;--ink-soft:#c6c0b5;--paper:#0b0b0b;--paper-2:#151515;--card:#111;--line:#35322d;--gold:#d4ad5b;--gold-2:#e4c57d;--green:#050505;--green-2:#171717;--hero:#050505;--white:#fff;--shadow:0 18px 50px rgba(0,0,0,.38)}}
+    body{background:var(--paper)}
+    .nav{position:absolute;align-items:center;padding-top:26px;text-shadow:0 1px 18px #000;z-index:30}
+    .nav a{padding:7px 0}
+    .nav .nav-book{padding:9px 15px;border:1px solid var(--gold-2);color:#fff;text-shadow:none}
+    .menu-toggle{display:none;position:absolute;z-index:40;top:18px;right:18px;width:46px;height:44px;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.72);color:#fff;cursor:pointer;align-items:center;justify-content:center}
+    .menu-toggle span,.menu-toggle:before,.menu-toggle:after{content:"";display:block;width:20px;height:1px;background:currentColor;position:absolute;transition:transform .2s,opacity .2s}
+    .menu-toggle:before{transform:translateY(-6px)}.menu-toggle:after{transform:translateY(6px)}
+    .menu-toggle[aria-expanded="true"] span{opacity:0}.menu-toggle[aria-expanded="true"]:before{transform:rotate(45deg)}.menu-toggle[aria-expanded="true"]:after{transform:rotate(-45deg)}
+    .hero{min-height:94svh;grid-template-columns:minmax(330px,.78fr) minmax(420px,1.22fr);background:#050505}
+    .hero-copy{padding-left:clamp(26px,7vw,100px);padding-right:clamp(26px,5vw,70px);background:#050505;z-index:2}
+    .hero-copy:after{background:var(--gold-2)}
+    h1{font-size:clamp(72px,10vw,148px);line-height:.7}
+    .hero-photo{min-height:94svh;background:#130e08}
+    .hero-photo img{object-position:center 46%;filter:saturate(.9) contrast(1.04)}
+    .hero-photo:after{background:linear-gradient(90deg,rgba(5,5,5,.34),transparent 35%),linear-gradient(0deg,rgba(0,0,0,.38),transparent 38%)}
+    .btn{border-color:var(--gold-2);background:var(--gold-2);color:#111}.btn.alt{color:#fff;border-color:#fff;background:transparent}
+    .cover-wrap:before,.filter[aria-pressed="true"],.coming{background:#111}
+    .story{grid-template-columns:1.05fr .95fr;align-items:stretch}
+    .story-images{display:grid;grid-template-columns:1fr .66fr;gap:14px;min-height:660px;position:relative}
+    .story-images img{width:100%;height:100%;object-fit:cover}.story-images .vintage{object-position:center}.story-images .gold-portrait{object-position:center top}
+    .story-images .year{position:absolute;right:-20px;bottom:30px;background:var(--gold-2);color:#16110a;padding:16px 19px;font-family:"Cormorant Garamond",serif;font-size:28px;line-height:1}
+    .roots{padding-top:0}.roots-stage{position:relative;min-height:560px;display:flex;align-items:flex-end;overflow:hidden;background:#050505;color:#fff}.roots-stage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.68)}.roots-stage:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.16) 70%),linear-gradient(0deg,rgba(0,0,0,.55),transparent 50%)}
+    .roots-copy{position:relative;z-index:1;max-width:590px;padding:clamp(28px,5vw,70px)}.roots-copy h2{font-size:clamp(46px,6vw,76px);line-height:.94;margin:0 0 18px}.roots-copy p:not(.overline){font-size:18px;color:#eee;margin:0}
+    .journey-card{position:absolute;z-index:2;right:clamp(18px,4vw,54px);bottom:clamp(18px,4vw,46px);width:min(240px,30vw);background:#fff;color:#111;padding:10px 10px 14px}.journey-card img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;margin-bottom:10px}.journey-card strong{display:block;font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1}.journey-card span{display:block;margin-top:4px;font-size:11px;color:#5f5a51}
+    .performance-strip{display:grid;grid-template-columns:1.1fr .78fr .9fr;gap:12px;background:#050505;padding:12px}.performance-shot{position:relative;min-height:470px;overflow:hidden}.performance-shot img{width:100%;height:100%;object-fit:cover}.performance-shot:nth-child(1) img{object-position:center 30%}.performance-shot:nth-child(2) img{object-position:center}.performance-shot:nth-child(3){min-height:260px;align-self:end}.performance-shot:nth-child(3) img{object-position:center}
+    .performance-shot span{position:absolute;left:16px;bottom:14px;color:#fff;background:rgba(0,0,0,.72);padding:7px 10px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    .video-sec{background:#080808}.epk{background:#0a0a0a}.video-sec .section-head p,.video-side p,.video-card p,.channel-cta p{color:#d0cdc6}
+    .filter[aria-pressed="true"]{border-color:#111}
+    .newsletter-slot{margin-top:22px}.newsletter-coming{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold)}
+    .story-copy-wide{max-width:940px;margin-bottom:38px}.about-gallery{display:grid;grid-template-columns:1.05fr .8fr 1.15fr;gap:12px;margin-top:14px}
+    .about-photo{margin:0;position:relative;overflow:hidden;background:#111;min-height:330px}.about-photo img{width:100%;height:100%;object-fit:cover}.about-photo:nth-child(1) img{object-position:center 35%}.about-photo:nth-child(2) img{object-position:center 24%}.about-photo:nth-child(3) img{object-position:center}
+    .about-photo figcaption,.journey-photo figcaption,.gallery-photo figcaption{position:absolute;left:12px;right:auto;bottom:12px;background:rgba(0,0,0,.78);color:#fff;padding:7px 9px;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+    .journey{padding-top:0}.journey-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}.journey-head h2{font-size:clamp(40px,5vw,64px);line-height:.95;margin:0}.journey-head p{max-width:520px;margin:0;color:var(--ink-soft)}
+    .journey-grid{display:grid;grid-template-columns:.52fr 1.18fr 1fr;grid-auto-rows:250px;gap:12px}.journey-photo{margin:0;position:relative;overflow:hidden;background:#111}.journey-photo img{width:100%;height:100%;object-fit:cover}.journey-photo.childhood{grid-row:span 1}.journey-photo.raised{grid-row:span 2}.journey-photo.ones2watch{grid-column:span 1}.journey-photo.denim{grid-column:span 2}.journey-photo.denim img{object-position:center 73%}
+    .journey-card img{aspect-ratio:4/3}.artist-quote{display:grid;grid-template-columns:minmax(260px,.78fr) 1.22fr;align-items:center;gap:clamp(28px,6vw,80px);padding-top:0}.artist-quote img{width:100%;aspect-ratio:1.25/1;object-fit:cover}.artist-quote .quote{text-align:left;padding:0}
+    .highlight-row{grid-template-columns:repeat(3,1fr)}.video-card-photo{position:relative;aspect-ratio:16/9;background:#080b0a;overflow:hidden;margin-bottom:18px}.video-card-photo img{width:100%;height:100%;object-fit:cover}.instagram-embed{position:relative;height:600px;background:#111;overflow:hidden;margin-bottom:18px}.instagram-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .gallery-section{padding:12px;background:#050505;color:#fff}.gallery-head{padding:clamp(52px,7vw,84px) clamp(10px,6vw,86px) 34px;display:flex;align-items:end;justify-content:space-between;gap:24px}.gallery-head h2{font-size:clamp(44px,6vw,74px);line-height:.95;margin:0}.gallery-head p{max-width:470px;margin:0;color:#ccc}.performance-gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:170px;gap:12px}.gallery-photo{margin:0;position:relative;overflow:hidden;background:#111;grid-column:span 4;grid-row:span 2}.gallery-photo img{width:100%;height:100%;object-fit:cover}.gallery-photo.tall{grid-column:span 3;grid-row:span 3}.gallery-photo.wide{grid-column:span 6;grid-row:span 2}.gallery-photo.square{grid-column:span 3;grid-row:span 2}.gallery-photo img[src*="green-smoke"]{object-position:center 26%}.gallery-photo img[src*="acoustic"]{object-position:center 30%}.gallery-photo img[src*="duet"]{object-position:center 34%}.gallery-photo img[src*="mirror"]{object-position:center 42%}
+    .press-intro{display:grid;grid-template-columns:1fr minmax(260px,.7fr);gap:clamp(28px,6vw,74px);align-items:end;margin-bottom:44px}.press-intro .section-head{margin:0}.press-portrait{margin:0;position:relative;overflow:hidden;min-height:320px}.press-portrait img{width:100%;height:100%;object-fit:cover}.press-portrait figcaption{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.78);color:#fff;padding:7px 9px;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+    @media(max-width:900px){
+      .menu-toggle{display:flex}.nav{display:none;position:absolute;top:72px;right:18px;left:auto;width:210px;padding:12px;background:#090909;border:1px solid #5c4a29;flex-direction:column;align-items:stretch;gap:0;text-shadow:none;box-shadow:0 16px 44px rgba(0,0,0,.4)}.nav.open{display:flex}.nav a{padding:12px 14px;border-bottom:1px solid #292929}.nav .nav-book{margin:8px 0 0;text-align:center;border:1px solid var(--gold-2)}
+      .hero{grid-template-columns:1fr;min-height:auto}.hero-copy{min-height:auto;padding-top:112px;padding-bottom:66px}.hero-photo{min-height:76svh}.hero-photo img{object-position:center 42%}
+      .story{grid-template-columns:1fr}.story-images{min-height:620px}.journey-card{width:200px}.release{grid-template-columns:1fr}.release .cover-wrap{max-width:430px}
+      .about-gallery{grid-template-columns:1fr 1fr}.about-photo:first-child{grid-row:span 2}.journey-grid{grid-template-columns:.7fr 1.3fr;grid-auto-rows:230px}.journey-photo.denim{grid-column:span 2}.artist-quote{grid-template-columns:1fr 1.2fr}.highlight-row{grid-template-columns:1fr 1fr}.performance-gallery{grid-template-columns:repeat(6,1fr)}.gallery-photo,.gallery-photo.tall,.gallery-photo.square{grid-column:span 3}.gallery-photo.wide{grid-column:span 6}.press-intro{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:640px){
+      .hero-copy{padding:92px 22px 64px}.hero-copy:after{display:none}h1{font-size:clamp(62px,25vw,92px);margin-bottom:26px}.hero-photo{min-height:70svh}.scripture{bottom:18px}
+      .release{grid-template-columns:1fr}.story-images{min-height:500px;grid-template-columns:1.25fr .75fr}.story-images .year{right:-4px;bottom:18px;font-size:23px}.story-copy .lead{font-size:29px}
+      .roots-stage{min-height:690px;align-items:flex-start}.roots-stage>img{object-position:center top}.roots-stage:after{background:linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.08) 58%,rgba(0,0,0,.5))}.roots-copy{padding:34px 24px;max-width:none}.roots-copy p:not(.overline){font-size:16px}.journey-card{width:145px;right:14px;bottom:14px}.journey-card strong{font-size:19px}.journey-card span{font-size:10px}
+      .performance-strip{grid-template-columns:1fr 1fr;gap:8px;padding:8px}.performance-shot{min-height:330px}.performance-shot:first-child{grid-column:1/-1;min-height:500px}.performance-shot:nth-child(3){min-height:330px}.performance-shot span{left:10px;bottom:10px;font-size:9px;padding:6px 8px}
+      .about-gallery{grid-template-columns:1fr}.about-photo{min-height:430px}.about-photo:first-child{grid-row:auto}.journey-head,.gallery-head{align-items:flex-start;flex-direction:column}.journey-grid{grid-template-columns:1fr 1fr;grid-auto-rows:210px}.journey-photo.childhood{grid-column:span 1}.journey-photo.raised{grid-row:span 2}.journey-photo.denim{grid-column:span 2}.artist-quote{grid-template-columns:1fr}.artist-quote .quote{text-align:center}.highlight-row{grid-template-columns:1fr}.video-card:last-child{grid-column:auto}.performance-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px;gap:8px}.gallery-photo,.gallery-photo.tall,.gallery-photo.square,.gallery-photo.wide{grid-column:span 1;grid-row:span 2}.gallery-photo.wide{grid-column:span 2}.press-intro{grid-template-columns:1fr}.press-portrait{min-height:300px}
+      .actions .btn{flex:1 1 180px}.contact .btn{width:100%}.placeholder strong{overflow-wrap:anywhere}.instagram-embed{height:560px}
+    }
+    @media(max-width:380px){.section{padding-left:16px;padding-right:16px}.hero-copy{padding-left:18px;padding-right:18px}.placeholder{padding:20px}.placeholder strong{font-size:25px}.facts li{grid-template-columns:1fr;gap:4px}.performance-gallery{grid-template-columns:1fr}.gallery-photo,.gallery-photo.tall,.gallery-photo.square,.gallery-photo.wide{grid-column:1;grid-row:span 2}.journey-grid{grid-template-columns:1fr}.journey-photo.childhood,.journey-photo.denim{grid-column:1}.journey-photo.raised{grid-row:span 2}}
+    @media(min-width:1800px){.hero{grid-template-columns:minmax(600px,.86fr) minmax(760px,1.14fr)}.hero-copy{padding-left:max(8vw,120px)}.section{padding-left:max(8vw,140px);padding-right:max(8vw,140px)}}
+
+    /* Responsive type and layout polish */
+    h1,h2,h3,.quote{text-wrap:balance}
+    p{text-wrap:pretty}
+    :where(a,button):focus-visible{outline:2px solid var(--gold-2);outline-offset:4px}
+    .section-head p,.journey-head p,.gallery-head p{max-width:62ch}
+    .story-copy p,.release-copy>p,.roots-copy p:not(.overline),.epk p,.contact p{max-width:68ch}
+    .video iframe,.player iframe{display:block}
+    .catalog-link,.appear-list a,.extras a{min-height:44px;align-items:center}
+
+    @media(max-width:1100px) and (min-width:901px){
+      .nav{gap:18px;padding-left:36px;padding-right:36px}
+      .hero{grid-template-columns:minmax(330px,.88fr) minmax(430px,1.12fr)}
+      .hero-copy{padding-left:44px;padding-right:36px}
+      h1{font-size:clamp(68px,9vw,106px)}
+      .hero-intro{font-size:20px}
+      .actions .btn{padding-left:16px;padding-right:16px}
+      .section{padding-left:54px;padding-right:54px}
+      .press-card{padding:22px}
+    }
+
+    @media(max-width:900px){
+      .hero-copy{padding-left:clamp(24px,7vw,58px);padding-right:clamp(24px,7vw,58px)}
+      .hero-copy>*{max-width:720px}
+      .hero-intro{max-width:34em}
+      .section-head{margin-bottom:34px}
+      .release-copy>p{max-width:44em}
+      .press-card h3{margin-top:20px}
+    }
+
+    @media(max-width:640px){
+      body{font-size:16px;line-height:1.6}
+      .menu-toggle{top:max(16px,env(safe-area-inset-top));right:max(16px,env(safe-area-inset-right));width:44px;height:44px}
+      .nav{top:calc(max(16px,env(safe-area-inset-top)) + 54px);right:max(16px,env(safe-area-inset-right));max-height:calc(100svh - 88px);overflow-y:auto}
+      .hero-copy{padding-top:clamp(88px,15svh,122px);padding-bottom:58px}
+      .hero .overline{max-width:30em;font-size:11px;letter-spacing:.16em;line-height:1.55;margin-bottom:14px}
+      h1{font-size:clamp(60px,24vw,88px);line-height:.73;letter-spacing:-.045em}
+      h1 span{font-size:.3em;letter-spacing:.11em;line-height:1.4;margin-top:2px}
+      .hero-intro{font-size:clamp(17px,4.7vw,19px);line-height:1.55;margin-bottom:28px}
+      .hero .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+      .hero .actions .btn{min-width:0;width:100%;padding:0 12px;font-size:13px;line-height:1.25;text-align:center}
+      .hero .actions .btn:first-child,.hero .actions .btn:last-child{grid-column:1/-1}
+      .hero-photo{min-height:68svh}
+      .scripture{font-size:18px;line-height:1.35}
+      .scripture small{display:block;margin:6px 0 0}
+      .section{padding-top:clamp(62px,17vw,78px);padding-bottom:clamp(62px,17vw,78px)}
+      .section-head h2,.story-copy h2,.contact h2,.epk h2{font-size:clamp(43px,13vw,58px);line-height:.98}
+      .section-head p{font-size:16px}
+      .release .cover-wrap{width:min(78vw,320px);max-width:100%;justify-self:center;margin-inline:auto}
+      .release-copy h3{font-size:clamp(40px,13vw,56px)}
+      .meta{gap:18px 24px;margin:24px 0}.meta span{flex:1 1 120px}.meta strong{font-size:17px}
+      .player{padding:14px}.player-head{gap:14px}.player-head a{text-align:right}
+      .story-copy p{font-size:16px}.story-copy .lead{font-size:clamp(27px,8vw,34px);line-height:1.2}
+      .journey-head{margin-bottom:24px}.journey-head h2{font-size:clamp(40px,12vw,54px)}
+      .quote{font-size:clamp(30px,9vw,42px);line-height:1.12}
+      .video-card h3{font-size:clamp(28px,9vw,34px)}
+      .catalog-group h3{font-size:30px}.catalog-link{font-size:14px;line-height:1.35}
+      .channel-cta h3{font-size:32px}.channel-cta .btn{width:100%}
+      .gallery-head{padding-top:48px}.gallery-head h2{font-size:clamp(43px,13vw,58px)}
+      .press-card h3{font-size:27px}.appearances h3{font-size:32px;line-height:1.05}
+      .filters{gap:7px}.filter{min-height:44px;padding:9px 13px}
+      .facts li{line-height:1.4}
+      .newsletter{padding:26px 22px}.newsletter h3{font-size:36px;line-height:1.05}
+      footer{padding-bottom:max(26px,env(safe-area-inset-bottom))}
+    }
+
+    @media(max-width:380px){
+      h1{font-size:clamp(56px,23vw,78px)}
+      h1 span{letter-spacing:.085em}
+      .hero .actions{grid-template-columns:1fr}
+      .hero .actions .btn{grid-column:1!important;font-size:14px}
+      .hero-photo{min-height:64svh}
+      .catalog-link{gap:10px}.catalog-link small{font-size:11px}
+    }
+
+    @media(max-width:900px) and (min-width:641px) and (orientation:landscape) and (max-height:560px){
+      .hero{grid-template-columns:minmax(340px,.9fr) minmax(420px,1.1fr)}
+      .hero-copy,.hero-photo{min-height:100svh}
+      .hero-copy{padding:78px 34px 34px}
+      .hero-copy:after{display:none}
+      h1{font-size:clamp(64px,9vw,82px);margin-bottom:20px}
+      .hero-intro{font-size:17px;margin-bottom:20px}
+      .hero .actions{gap:8px}.hero .actions .btn{min-height:42px;font-size:12px;padding:0 12px}
+      .hero-photo img{object-position:center 43%}
+      .scripture{font-size:15px;bottom:14px}
+    }
+
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.menu-toggle span,.menu-toggle:before,.menu-toggle:after{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span></button>
+  <nav class="nav" id="primary-nav" aria-label="Primary">
+    <a href="#music">Music</a><a href="#story">Story</a><a href="#watch">Watch</a><a href="#press">Press</a><a class="nav-book" href="#contact">Contact BIBI</a>
+  </nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="overline">Nigerian soul · R&amp;B · live performance</p>
+        <h1 id="hero-title">BIBI<span>BIBICENTRIC</span></h1>
+        <p class="hero-intro">A soul singer, songwriter, and performer who owns every stage — powerhouse vocals, magnetic presence.</p>
+        <div class="actions">
+          <a class="btn" href="https://open.spotify.com/artist/252UU33lg6dxIpzSCtnoOg" target="_blank" rel="noopener">Listen on Spotify</a>
+          <a class="btn alt" href="https://www.instagram.com/bibicentric" target="_blank" rel="noopener">Follow on Instagram</a>
+          <a class="btn alt" href="https://www.facebook.com/share/18M9Eq7SeM/?mibextid=wwXIfr" target="_blank" rel="noopener">Follow on Facebook</a>
+          <a class="btn alt" href="#contact">Contact BIBI</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img loading="eager" decoding="async" fetchpriority="high" src="assets/bibi-red-floral-performance.jpg" alt="BIBI singing powerfully in a black corset gown before a red floral wall" width="1095" height="1935" />
+        <p class="scripture">God is within her, she will not fall.<small>Psalm 46:5</small></p>
+      </div>
+    </section>
+
+    <section class="section music" id="music">
+      <div class="section-head">
+        <h2>Listen</h2>
+        <p>Music that holds love, solitude, family and quiet strength in the same room.</p>
+      </div>
+      <div class="release">
+        <div class="cover-wrap"><img loading="lazy" decoding="async" src="assets/monophobia.jpg" alt="Monophobia EP artwork" width="3000" height="3000" /></div>
+        <div class="release-copy">
+          <p class="overline">Debut EP</p>
+          <h3>Monophobia</h3>
+          <p>A five-track R&amp;B and soul project with jazz references, drawn from lived emotions around love and family. Its five tracks move through intimate, emotionally direct arrangements.</p>
+          <div class="meta"><span>Released<strong>21 July 2020</strong></span><span>Length<strong>16:40</strong></span><span>Highlights<strong>“Toxic” · “You”</strong></span></div>
+          <div class="actions"><a class="btn" href="https://open.spotify.com/artist/252UU33lg6dxIpzSCtnoOg" target="_blank" rel="noopener">Play on Spotify</a><a class="btn" href="https://music.apple.com/us/artist/bibicentric/1504422879" target="_blank" rel="noopener">Play on Apple Music</a></div>
+        </div>
+      </div>
+      <div class="players" aria-label="Music players">
+        <div class="player spotify"><div class="player-head"><strong>Spotify</strong><a href="https://open.spotify.com/artist/252UU33lg6dxIpzSCtnoOg" target="_blank" rel="noopener">Open artist page</a></div><iframe title="Bibicentric on Spotify" loading="lazy" src="https://open.spotify.com/embed/artist/252UU33lg6dxIpzSCtnoOg" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+        <div class="player apple"><div class="player-head"><strong>Apple Music</strong><a href="https://music.apple.com/us/artist/bibicentric/1504422879" target="_blank" rel="noopener">Open artist page</a></div><iframe title="Bibicentric on Apple Music" loading="lazy" src="https://embed.music.apple.com/us/artist/bibicentric/1504422879" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"></iframe></div>
+      </div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="story-copy story-copy-wide">
+        <p class="overline">The story</p>
+        <h2>From Bibi to Bibicentric.</h2>
+        <p class="lead">The name changed. The center held: a voice built for truth, intimacy and the stage.</p>
+        <p>Bola Akinlaja began music training at 15 and emerged in Lagos as Bibi, releasing “Jeje” and “Endlessly” in 2016 after training at Tenstrings Music Institute. Tenstrings named her its Artist of the Year.</p>
+        <p>By 2020 she had returned as Bibicentric, an independent soul artist with the single “Magic” and her debut EP, <em>Monophobia</em>. Her sound draws from soul, R&amp;B and jazz, while her live work carries the immediacy she has long called her strength.</p>
+        <p>Her story stretches from Surulere and Nigeria’s music stages toward a wider global chapter—always rooted in faith, family and emotional honesty.</p>
+      </div>
+      <div class="about-gallery" aria-label="BIBI onstage and in rehearsal">
+        <figure class="about-photo"><img loading="lazy" decoding="async" src="assets/bibi-pink-stage-closeup.jpg" alt="BIBI singing in a pink satin dress under blue stage lights" width="1290" height="855" /><figcaption>Live performance</figcaption></figure>
+        <figure class="about-photo"><img loading="lazy" decoding="async" src="assets/bibi-vintage-glam.jpg" alt="BIBI in vintage black glamour styling beside a classic microphone" width="1290" height="1932" /><figcaption>Studio portrait</figcaption></figure>
+        <figure class="about-photo"><img loading="lazy" decoding="async" src="assets/bibi-band-rehearsal.jpg" alt="BIBI smiling with a microphone during band rehearsal" width="1290" height="726" /><figcaption>In rehearsal</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section journey" aria-labelledby="journey-title">
+      <div class="journey-head"><h2 id="journey-title">Where it started.</h2><p>From a childhood microphone to the Tenstrings stages that shaped BIBI’s early live voice.</p></div>
+      <div class="journey-grid">
+        <figure class="journey-photo childhood"><img loading="lazy" decoding="async" src="assets/bibi-childhood-mic.jpg" alt="BIBI singing into a microphone as a child" width="1290" height="1720" /><figcaption>Where it all began</figcaption></figure>
+        <figure class="journey-photo raised"><img loading="lazy" decoding="async" src="assets/bibi-early-tenstrings-cropped.jpg" alt="A young BIBI singing onstage with her hands raised at a Tenstrings performance" width="1160" height="1900" /><figcaption>Early stage</figcaption></figure>
+        <figure class="journey-photo ones2watch"><img loading="lazy" decoding="async" src="assets/bibi-tenstrings-stage.jpg" alt="BIBI singing under purple light during the Tenstrings Ones2Watch era" width="1290" height="860" /><figcaption>Ones2Watch</figcaption></figure>
+        <figure class="journey-photo ones2watch"><img loading="lazy" decoding="async" src="assets/bibi-ones2watch-early.jpg" alt="BIBI performing in patterned dress amid purple stage smoke during the Ones2Watch era" width="1290" height="860" /><figcaption>Tenstrings era</figcaption></figure>
+        <figure class="journey-photo denim"><img loading="lazy" decoding="async" src="assets/bibi-early-denim-bw.jpg" alt="Black-and-white image of BIBI singing in a denim jacket during an early live performance" width="1085" height="755" /><figcaption>Early live set</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section roots" aria-label="From Lagos to the DMV">
+      <div class="roots-stage">
+        <img loading="lazy" decoding="async" src="assets/bibi-orchestra-nigeria-stage.jpg" alt="BIBI in red performing with a full orchestra before a screen lit in Nigeria's green and white colors" width="1290" height="726" />
+        <div class="roots-copy"><p class="overline">Lagos-born · DMV-based</p><h2>Rooted in Nigeria. Alive on every stage.</h2><p>From early stages in Lagos to orchestra-backed performances in Washington, BIBI brings the same emotional truth to every room.</p></div>
+        <div class="journey-card"><img loading="lazy" decoding="async" src="assets/bibi-pink-live-band.jpg" alt="BIBI performing live in a pink dress with her band" width="1115" height="855" /><strong>Then to now</strong><span>Live with the band</span></div>
+      </div>
+    </section>
+
+    <section class="section artist-quote" aria-label="Artist statement">
+      <img loading="lazy" decoding="async" src="assets/bibi-vintage-quote-portrait.jpg" alt="BIBI in vintage black styling beside a classic microphone" width="850" height="640" />
+      <p class="quote">My voice is my instrument, and I see it as a gift that allows me to connect with people, tell stories, and express emotions that words alone sometimes cannot.<cite>— BIBI</cite></p>
+    </section>
+
+    <section class="section video-sec" id="watch">
+      <div class="section-head"><h2>Watch</h2><p>Official visuals, intimate sessions, reinterpretations and performances from the stage.</p></div>
+      <div class="video-grid">
+        <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UrIuDUqtWKY" title="YOU live performance by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <aside class="video-side"><div><p class="overline">Live · Most watched · 26K views</p><h3>YOU</h3><p>A standout live session centered on BIBI’s voice and presence.</p></div><a class="text-link" href="https://www.youtube.com/watch?v=UrIuDUqtWKY" target="_blank" rel="noopener">Watch on YouTube</a></aside>
+      </div>
+      <div class="highlight-row" aria-label="Featured videos">
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PuH_Y8tpmNY" title="Magic official video by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Official video</p><h3>Magic</h3><p>The official visual for BIBICENTRIC’s 2020 single.</p><a class="text-link" href="https://www.youtube.com/watch?v=PuH_Y8tpmNY" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5WkxjbCM_ek" title="Irey live performance by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Live</p><h3>Irey</h3><p>A stripped-back performance centered on voice and musicianship.</p><a class="text-link" href="https://www.youtube.com/watch?v=5WkxjbCM_ek" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video-card-photo"><img loading="lazy" decoding="async" src="assets/bibi-afrosoul-medley.jpg" alt="BIBI singing an Afrosoul Medley with an acoustic guitarist" width="1290" height="726" /></div>
+          <p class="overline">Acoustic session</p><h3>Afrosoul Medley</h3><p>BIBI and guitar in an intimate medley session.</p><a class="text-link" href="https://youtu.be/CS17HdIMeTo" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6Qnse37aXho" title="Que Sera Sera cover performed by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Cover</p><h3>Que Sera Sera (Cover)</h3><p>BIBI’s rendition of the classic song.</p><a class="text-link" href="https://youtu.be/6Qnse37aXho" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/w3d35laj1zQ" title="YOU performed live by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Live</p><h3>YOU (Live)</h3><p>BIBI performs her single “YOU” in a full-band live session.</p><a class="text-link" href="https://youtu.be/w3d35laj1zQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/evC1Jgm6vVw" title="You studio session performed by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Studio performance</p><h3>You — Studio Session</h3><p>A focused studio performance of “You.”</p><a class="text-link" href="https://youtu.be/evC1Jgm6vVw" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wcZ5efDNsOM" title="Live concert set by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Live</p><h3>Originals — Live Set</h3><p>A 13-minute concert performance of BIBI’s original songs, including “Irey.”</p><a class="text-link" href="https://youtu.be/wcZ5efDNsOM" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GDNBLW5zJ5s" title="Afro Fusion Night live performance by Bibi" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Live</p><h3>Afro-Fusion Live Set</h3><p>A 21-minute Afro-fusion performance.</p><a class="text-link" href="https://youtu.be/GDNBLW5zJ5s" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <div class="video"><iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3rP0gGnKqOs" title="Confetti acoustic cover performed by Bibicentric" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p class="overline">Cover</p><h3>Confetti (Cover)</h3><p>An intimate acoustic rendition.</p><a class="text-link" href="https://youtu.be/3rP0gGnKqOs" target="_blank" rel="noopener">Watch on YouTube</a>
+        </article>
+        <article class="video-card">
+          <a class="video-card-photo" style="display:block" href="https://www.instagram.com/reel/Dc4m9tlJrcm/" target="_blank" rel="noopener" aria-label="Watch BIBI’s Symphonies of Gold DC performance on Instagram"><img loading="lazy" decoding="async" src="assets/bibi-symphonies-hero-full.jpg" alt="BIBI performing in a black strapless gown before the golden curtain at Symphonies of Gold in Washington, DC" width="1290" height="1935" style="object-position:center 38%" /></a>
+          <p class="overline">Instagram Reel</p><h3>Symphonies of Gold DC Performance</h3><p>BIBI performs at Symphonies of Gold in Washington, DC.</p><a class="text-link" href="https://www.instagram.com/reel/Dc4m9tlJrcm/" target="_blank" rel="noopener">Watch on Instagram</a>
+        </article>
+        <article class="video-card">
+          <a class="video-card-photo" style="display:block" href="https://www.instagram.com/reel/Dd2DwL1AHs_/" target="_blank" rel="noopener" aria-label="Watch BIBI’s Mujojo and Zombie reimagined performance on Instagram"><img loading="lazy" decoding="async" src="assets/performance-reel-thumbnail.jpg" alt="BIBI singing during a live performance in Washington, DC" width="720" height="405" /></a>
+          <p class="overline">Instagram Reel</p><h3>Mujojo / Zombie Reimagined</h3><p>A reimagined live performance in Washington, DC.</p><a class="text-link" href="https://www.instagram.com/reel/Dd2DwL1AHs_/" target="_blank" rel="noopener">Watch on Instagram</a>
+        </article>
+      </div>
+
+      <div class="video-catalog" aria-label="Complete video catalog">
+        <div class="catalog-group">
+          <h3>Official videos</h3>
+          <div class="catalog-links">
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=PuH_Y8tpmNY" target="_blank" rel="noopener"><span>Magic (Official Video)</span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=cesn54eYx4M" target="_blank" rel="noopener"><span>What Love Feels Like</span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=9g_fC6GElmA" target="_blank" rel="noopener"><span>Beautiful</span><small>Watch ↗</small></a>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Live sessions</h3>
+          <div class="catalog-links">
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=UrIuDUqtWKY" target="_blank" rel="noopener"><span>YOU — Live<span class="catalog-note">Most viewed · 26K</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=w3d35laj1zQ" target="_blank" rel="noopener"><span>Magic — live session</span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=mgWBlodUQ0g" target="_blank" rel="noopener"><span>Girls Need Love — live session</span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=5WkxjbCM_ek" target="_blank" rel="noopener"><span>Irey — Live</span><small>Watch ↗</small></a>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Covers</h3>
+          <div class="catalog-links">
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=r37eh_2ygWM" target="_blank" rel="noopener"><span>Redemption Song <span class="catalog-note">Cover · 2016/17 era</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=19KRQq2PwQQ" target="_blank" rel="noopener"><span>I Gotta Find Peace of Mind <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=6Qnse37aXho" target="_blank" rel="noopener"><span>Que Sera Sera</span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=bmglK1A38G4" target="_blank" rel="noopener"><span>I Will Survive <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=fekGlgaeCPs" target="_blank" rel="noopener"><span>I Will Survive — behind the scenes</span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=shFVB4J0izA" target="_blank" rel="noopener"><span>At Last <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=PeP_n5VdLkQ" target="_blank" rel="noopener"><span>Natural Woman <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=n9sv1dJKtHA" target="_blank" rel="noopener"><span>Valerie <span class="catalog-note">Live cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=XfAVu1jrTVI" target="_blank" rel="noopener"><span>Diamonds <span class="catalog-note">Acoustic cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=8mRkild1ZVk" target="_blank" rel="noopener"><span>Trip <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=aZg8q_yF5H4" target="_blank" rel="noopener"><span>Is This Love <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=KGSRMq0KcI0" target="_blank" rel="noopener"><span>Teenage Fantasy <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=IFKiT3lJ7ro" target="_blank" rel="noopener"><span>Something’s Got a Hold on Me <span class="catalog-note">Burlesque-inspired</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=rsX_oh5OGB0" target="_blank" rel="noopener"><span>Beautiful Little Fools <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=mnoVVfzOzic" target="_blank" rel="noopener"><span>Girl Like Me <span class="catalog-note">Cover</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=gaEU6ZxIexM" target="_blank" rel="noopener"><span>I’ll Rise Up <span class="catalog-note">Studio session</span></span><small>Watch ↗</small></a>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Live performances</h3>
+          <div class="catalog-links">
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=jDf9McvXhfo" target="_blank" rel="noopener"><span>OPES Freedom Park <span class="catalog-note">November 21, 2021</span></span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=uS_4MRPrdaM" target="_blank" rel="noopener"><span>Freedom Park — Teenage Fantasy</span><small>Watch ↗</small></a>
+            <a class="catalog-link" href="https://www.youtube.com/watch?v=SK9pcybSTpo" target="_blank" rel="noopener"><span>Freedom Park — Valerie</span><small>Watch ↗</small></a>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>More to watch</h3>
+          <div class="extras">
+            <a href="https://www.youtube.com/watch?v=XDmOGWx6fpI" target="_blank" rel="noopener">Song Association Challenge ↗</a>
+            <a href="https://www.youtube.com/watch?v=CS17HdIMeTo" target="_blank" rel="noopener">The Power of Music ↗</a>
+            <a href="https://www.instagram.com/p/CKCAdGQD3qJ/" target="_blank" rel="noopener">Live on TVC ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="channel-cta">
+        <div><h3>More from BIBI on YouTube</h3><p>Watch every official video, session, cover and performance in one place.</p></div>
+        <a class="btn" href="https://www.youtube.com/@Bibicentric" target="_blank" rel="noopener">Watch everything on YouTube</a>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="gallery-head"><h2 id="gallery-title">In performance.</h2><p>Onstage, in session and inside the moments where the music becomes shared.</p></div>
+      <div class="performance-gallery">
+        <figure class="gallery-photo square"><img loading="lazy" decoding="async" src="assets/bibi-green-smoke.jpg" alt="BIBI singing in a blue patterned dress amid green stage smoke" width="1060" height="1100" /><figcaption>Live in color</figcaption></figure>
+        <figure class="gallery-photo wide"><img loading="lazy" decoding="async" src="assets/bibi-red-stage.jpg" alt="BIBI singing under vivid red stage lights" width="1290" height="855" /><figcaption>Under the lights</figcaption></figure>
+        <figure class="gallery-photo wide"><img loading="lazy" decoding="async" src="assets/bibi-blue-smoke.jpg" alt="BIBI singing in a denim jacket against blue stage smoke" width="1050" height="745" /><figcaption>Early live set</figcaption></figure>
+        <figure class="gallery-photo square"><img loading="lazy" decoding="async" src="assets/bibi-coral-blue-lights.jpg" alt="BIBI performing in a coral dress under blue stage lights" width="1120" height="855" /><figcaption>Live performance</figcaption></figure>
+        <figure class="gallery-photo wide"><img loading="lazy" decoding="async" src="assets/bibi-red-gold-stage.jpg" alt="BIBI performing in a red dress with a guitarist against a warm gold backdrop" width="1200" height="790" /><figcaption>Voice and guitar</figcaption></figure>
+        <figure class="gallery-photo tall"><img loading="lazy" decoding="async" src="assets/bibi-acoustic-white-satin.jpg" alt="BIBI singing in a white satin dress during an intimate acoustic session" width="1290" height="1935" /><figcaption>Acoustic session</figcaption></figure>
+        <figure class="gallery-photo tall"><img loading="lazy" decoding="async" src="assets/bibi-duet-performance.jpg" alt="BIBI in a white shirt and long braids performing a duet" width="1290" height="2291" /><figcaption>Duet</figcaption></figure>
+        <figure class="gallery-photo square"><img loading="lazy" decoding="async" src="assets/bibi-studio-triptych.jpg" alt="Three studio performance frames of BIBI singing into a vintage microphone" width="1290" height="1290" /><figcaption>Studio session</figcaption></figure>
+        <figure class="gallery-photo square"><img loading="lazy" decoding="async" src="assets/bibi-mirror-mic.jpg" alt="BIBI reflected in a mirror while singing beside a vintage microphone" width="1290" height="1932" /><figcaption>In reflection</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section press" id="press">
+      <div class="press-intro">
+        <div class="section-head"><h2>Press &amp; features</h2><p>A selected archive spanning the early Bibi era and the emergence of Bibicentric.</p></div>
+        <figure class="press-portrait"><img loading="lazy" decoding="async" src="assets/bibi-interview.jpg" alt="BIBI smiling during an interview in a colorful patterned top" width="1290" height="860" /><figcaption>In conversation</figcaption></figure>
+      </div>
+      <div class="filters" role="group" aria-label="Filter press coverage">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-filter="feature" aria-pressed="false">Features</button>
+        <button class="filter" type="button" data-filter="interview" aria-pressed="false">Interviews</button>
+        <button class="filter" type="button" data-filter="review" aria-pressed="false">Reviews &amp; news</button>
+      </div>
+      <div class="press-grid" id="press-grid">
+        <article class="press-card" data-type="feature"><time>2016 · Profile</time><h3>Tenstrings Music Institute</h3><p>Artist of the Year profile tracing her training and the release of “Jeje” and “Endlessly.”</p><a href="https://tenstrings.org/school-of-technology/" target="_blank" rel="noopener">Read feature</a></article>
+        <article class="press-card" data-type="feature"><time>July 2016 · New music</time><h3>BellaNaija</h3><p>A launch feature introducing both early singles and the artist then known as Bibi.</p><a href="https://www.bellanaija.com/2016/07/new-music-endlessly-jeje-bibi/" target="_blank" rel="noopener">Read feature</a></article>
+        <article class="press-card" data-type="feature"><time>July 2016 · Premiere</time><h3>tooXclusive</h3><p>Premiere coverage for the early singles “Jeje” and “Endlessly.”</p><a href="https://tooxclusive.com/download-mp3/bibi-jeje-endlessly/" target="_blank" rel="noopener">Read coverage</a></article>
+        <article class="press-card" data-type="feature"><time>10 July 2016 · Feature</time><h3>NollywoodGists</h3><p>An early-career profile positioning Bibi as a distinctive new voice in Nigerian music.</p><a href="https://www.Nollywoodgists.com/news/41584/bibi-a-breath-of-fresh-air-in-the-nigerian-music-i.html" target="_blank" rel="noopener">Read feature</a></article>
+        <article class="press-card" data-type="interview"><time>29 July 2020 · Podcast</time><h3>The Young Entrepreneur</h3><p>A 50-minute conversation on independence, lessons from the industry and being a young female soul singer.</p><a href="https://www.ivoox.com/interview-with-bibicentric-audios-mp3_rf_55375792_1.html" target="_blank" rel="noopener">Hear interview</a></article>
+        <article class="press-card" data-type="feature"><time>August 2020 · Artist profile</time><h3>Niji Magazine</h3><p>An introduction to Bibicentric and the sensual, laid-back sound of her debut EP.</p><a href="https://nijimagazine.com/2020/08/introducing-nigerian-based-rb-soul-singer-songwriter-bibicentric-and-her-sensual-laid-back-debut-ep-monophobia/" target="_blank" rel="noopener">Read feature</a></article>
+        <article class="press-card" data-type="interview"><time>2020 · Q&amp;A</time><h3>WeTalkSound</h3><p>An in-depth conversation about Lagos roots, influences, independence and the power of live performance.</p><a href="https://blog-admin.wetalksound.co/wtsgems-meet-bibicentric/" target="_blank" rel="noopener">Read interview</a></article>
+        <article class="press-card" data-type="review"><time>2020 · EP review</time><h3>A&amp;R Factory</h3><p>A review highlighting the emotional vocal delivery and R&amp;B/jazz production on <em>Monophobia</em>.</p><a href="https://www.anrfactory.com/tag/bibicentric/" target="_blank" rel="noopener">Read review</a></article>
+        <article class="press-card" data-type="review"><time>June 2021 · Live news</time><h3>Africa Global Village</h3><p>Coverage of the MTN Live from Home concert, where Bibicentric performed “Mama’s Prayers.”</p><a href="https://www.africaglobalvillage.com/khemmiesings-jdees-idono-others-deliver-stellar-performances-at-the-mtn-live-from-home-concert/" target="_blank" rel="noopener">Read coverage</a></article>
+      </div>
+      <div class="appearances">
+        <h3>Broadcast &amp; media appearances</h3>
+        <div class="appear-list">
+          <a href="https://www.instagram.com/p/BH9iAPiAqhx/" target="_blank" rel="noopener">Nigerian Tribune · 2016</a>
+          <a href="https://www.instagram.com/p/BIR4a3iAY1q/" target="_blank" rel="noopener">ThisDay · 2016</a>
+          <a href="https://www.instagram.com/p/BU9xt78AlbZ/" target="_blank" rel="noopener">Channels TV · 2017</a>
+          <a href="https://www.instagram.com/p/B_uWbKKjl6j/" target="_blank" rel="noopener">BBC News Pidgin · circa 2017</a>
+          <a href="https://www.instagram.com/p/CAVeAfDDEdB/" target="_blank" rel="noopener">Lagos Jump Radio · 2020</a>
+          <a href="https://www.instagram.com/p/CKCAdGQD3qJ/" target="_blank" rel="noopener">TVC · 2021</a>
+          <a href="https://www.instagram.com/p/CMPGz4TjT8k/" target="_blank" rel="noopener">Studio feature · 2021</a>
+          <a href="https://www.instagram.com/p/CNLF3pbDX8C/" target="_blank" rel="noopener">ViralCrib · 2021</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section epk" aria-labelledby="epk-title">
+      <div class="epk-grid">
+        <div><p class="overline">Electronic press kit</p><h2 id="epk-title">BIBI, also known as Bibicentric.</h2><p>Nigerian R&amp;B and soul singer, songwriter and performer. Lagos-born, DMV-based.</p><p class="press-note">For profiles and event listings: some early coverage appears under “Bibi”; music released from 2020 onward appears under “Bibicentric.”</p></div>
+        <ul class="facts">
+          <li><span>Genre</span><strong>R&amp;B · Soul · Jazz-influenced</strong></li>
+          <li><span>Origin</span><strong>Surulere, Lagos, Nigeria</strong></li>
+          <li><span>Debut EP</span><strong>Monophobia (2020)</strong></li>
+          <li><span>Selected songs</span><strong>Magic · Irey · Toxic · You · Mama’s Prayers</strong></li>
+          
+          <li><span>Live stage</span><strong>Freedom Park</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact">
+        <div>
+          <p class="overline">Bookings &amp; press</p><h2>Contact BIBI.</h2>
+          <div class="placeholder"><strong><a href="mailto:Bibicentric@gmail.com">Bibicentric@gmail.com</a></strong><p>For bookings, press and professional inquiries, contact BIBI by email.</p><div class="socials"><a href="https://www.instagram.com/bibicentric" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/18M9Eq7SeM/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook artist page</a></div></div>
+        </div>
+        <aside class="newsletter">
+          <p class="overline">Follow along</p><h3>Stay in the loop.</h3><p>Keep up with new music, live dates and notes from BIBI on her profiles.</p>
+          <div class="socials"><a href="https://www.instagram.com/bibicentric" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/18M9Eq7SeM/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="https://open.spotify.com/artist/252UU33lg6dxIpzSCtnoOg" target="_blank" rel="noopener">Spotify</a></div>
+          <div class="newsletter-slot"><span class="newsletter-coming">Newsletter coming soon.</span></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 2026 BIBICENTRIC</span><a class="back" href="#main">Back to top ↑</a></footer>
+  <script>
+    (function(){
+      var buttons=document.querySelectorAll('.filter');
+      var cards=document.querySelectorAll('.press-card');
+      var menuButton=document.querySelector('.menu-toggle');
+      var nav=document.querySelector('.nav');
+      buttons.forEach(function(button){
+        button.addEventListener('click',function(){
+          var filter=button.getAttribute('data-filter');
+          buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b===button));});
+          cards.forEach(function(card){card.hidden=filter!=='all'&&card.getAttribute('data-type')!==filter;});
+        });
+      });
+      function closeMenu(returnFocus){
+        menuButton.setAttribute('aria-expanded','false');
+        menuButton.setAttribute('aria-label','Open navigation');
+        nav.classList.remove('open');
+        if(returnFocus){menuButton.focus();}
+      }
+      menuButton.addEventListener('click',function(){
+        var open=menuButton.getAttribute('aria-expanded')==='true';
+        if(open){closeMenu(false);}else{
+          menuButton.setAttribute('aria-expanded','true');
+          menuButton.setAttribute('aria-label','Close navigation');
+          nav.classList.add('open');
+        }
+      });
+      document.addEventListener('keydown',function(event){if(event.key==='Escape'&&nav.classList.contains('open')){closeMenu(true);}});
+      document.addEventListener('click',function(event){if(nav.classList.contains('open')&&!nav.contains(event.target)&&!menuButton.contains(event.target)){closeMenu(false);}});
+      nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){closeMenu(false);});});
+    }());
+  </script>
+</body>
+</html>
