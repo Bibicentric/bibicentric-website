@@ -7,15 +7,17 @@
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <title>BIBICENTRIC — Nigerian Soul Singer</title>
   <meta name="description" content="A soul singer, songwriter, and performer who owns every stage — powerhouse vocals, magnetic presence." />
+  <link rel="canonical" href="https://bibicentric.github.io/" />
+  <meta property="og:url" content="https://bibicentric.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="BIBICENTRIC — Nigerian Soul Singer" />
   <meta property="og:description" content="A soul singer, songwriter, and performer who owns every stage — powerhouse vocals, magnetic presence." />
-  <meta property="og:image" content="assets/bibi-red-floral-performance.jpg" />
+  <meta property="og:image" content="https://bibicentric.github.io/assets/bibi-red-floral-performance.jpg" />
   <meta property="og:image:alt" content="BIBI commanding the stage in a black corset gown before a red floral wall" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="BIBICENTRIC — Nigerian Soul Singer" />
   <meta name="twitter:description" content="A soul singer, songwriter, and performer who owns every stage — powerhouse vocals, magnetic presence." />
-  <meta name="twitter:image" content="assets/bibi-red-floral-performance.jpg" />
+  <meta name="twitter:image" content="https://bibicentric.github.io/assets/bibi-red-floral-performance.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -203,7 +205,7 @@
     }
 
     @media(max-width:900px) and (min-width:641px) and (orientation:landscape) and (max-height:560px){
-      .hero{grid-template-columns:minmax(340px,.9fr) minmax(420px,1.1fr)}
+      .hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
       .hero-copy,.hero-photo{min-height:100svh}
       .hero-copy{padding:78px 34px 34px}
       .hero-copy:after{display:none}
@@ -215,6 +217,17 @@
     }
 
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.menu-toggle span,.menu-toggle:before,.menu-toggle:after{transition:none}}
+    /* Audit fixes: focus contrast, narrow-screen wrapping and booking access. */
+    :where(a,button):focus-visible{outline-color:var(--gold)}
+    :where(.hero,.nav,.video-sec,.gallery-section,.epk,.roots-stage) :where(a,button):focus-visible{outline-color:#e4c57d}
+    .skip:focus-visible{outline-color:var(--gold)}
+    .hero-copy,.hero-photo,.release-copy,.contact>*,.facts strong{min-width:0}
+    .hero-copy .actions .btn{white-space:normal;text-align:center}
+    .socials a,.text-link,.back{display:inline-flex;align-items:center;min-height:44px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+    #main:focus{outline:none}
+    @media(max-width:900px){.menu-toggle{position:fixed}.nav{position:fixed}}
+    @media(max-width:900px) and (min-width:641px) and (orientation:landscape) and (max-height:560px){.hero-copy{padding-left:22px;padding-right:22px}.hero-intro{overflow-wrap:anywhere}.hero .actions .btn{flex:1 1 130px}}
   </style>
 </head>
 <body>
@@ -223,7 +236,7 @@
   <nav class="nav" id="primary-nav" aria-label="Primary">
     <a href="#music">Music</a><a href="#story">Story</a><a href="#watch">Watch</a><a href="#press">Press</a><a class="nav-book" href="#contact">Contact BIBI</a>
   </nav>
-  <main id="main">
+  <main id="main" tabindex="-1">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="overline">Nigerian soul · R&amp;B · live performance</p>
@@ -438,12 +451,13 @@
         <div class="section-head"><h2>Press &amp; features</h2><p>A selected archive spanning the early Bibi era and the emergence of Bibicentric.</p></div>
         <figure class="press-portrait"><img loading="lazy" decoding="async" src="assets/bibi-interview.jpg" alt="BIBI smiling during an interview in a colorful patterned top" width="1290" height="860" /><figcaption>In conversation</figcaption></figure>
       </div>
-      <div class="filters" role="group" aria-label="Filter press coverage">
+      <div class="filters" role="group" aria-label="Filter press coverage" aria-controls="press-grid">
         <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="filter" type="button" data-filter="feature" aria-pressed="false">Features</button>
         <button class="filter" type="button" data-filter="interview" aria-pressed="false">Interviews</button>
         <button class="filter" type="button" data-filter="review" aria-pressed="false">Reviews &amp; news</button>
       </div>
+      <p class="sr-only" id="press-status" role="status" aria-live="polite" aria-atomic="true">Showing all 9 press items.</p>
       <div class="press-grid" id="press-grid">
         <article class="press-card" data-type="feature"><time>2016 · Profile</time><h3>Tenstrings Music Institute</h3><p>Artist of the Year profile tracing her training and the release of “Jeje” and “Endlessly.”</p><a href="https://tenstrings.org/school-of-technology/" target="_blank" rel="noopener">Read feature</a></article>
         <article class="press-card" data-type="feature"><time>July 2016 · New music</time><h3>BellaNaija</h3><p>A launch feature introducing both early singles and the artist then known as Bibi.</p><a href="https://www.bellanaija.com/2016/07/new-music-endlessly-jeje-bibi/" target="_blank" rel="noopener">Read feature</a></article>
@@ -488,7 +502,7 @@
       <div class="contact">
         <div>
           <p class="overline">Bookings &amp; press</p><h2>Contact BIBI.</h2>
-          <div class="placeholder"><strong><a href="mailto:Bibicentric@gmail.com">Bibicentric@gmail.com</a></strong><p>For bookings, press and professional inquiries, contact BIBI by email.</p><div class="socials"><a href="https://www.instagram.com/bibicentric" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/18M9Eq7SeM/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook artist page</a></div></div>
+          <div class="placeholder"><strong><a href="mailto:Bibicentric@gmail.com">Bibicentric@gmail.com</a></strong><p>For bookings, press and professional inquiries, contact BIBI by email.</p><p>For event bookings, include your event date, location, type of event and desired performance length.</p><div class="actions" style="margin-top:20px"><a class="btn" href="mailto:Bibicentric@gmail.com?subject=Booking%20inquiry%20for%20BIBICENTRIC">Email for bookings</a></div><div class="socials"><a href="https://www.instagram.com/bibicentric" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/18M9Eq7SeM/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook artist page</a></div></div>
         </div>
         <aside class="newsletter">
           <p class="overline">Follow along</p><h3>Stay in the loop.</h3><p>Keep up with new music, live dates and notes from BIBI on her profiles.</p>
@@ -510,6 +524,8 @@
           var filter=button.getAttribute('data-filter');
           buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b===button));});
           cards.forEach(function(card){card.hidden=filter!=='all'&&card.getAttribute('data-type')!==filter;});
+          var count=Array.from(cards).filter(function(card){return !card.hidden;}).length;
+          document.getElementById('press-status').textContent='Showing '+count+' press items: '+button.textContent+'.';
         });
       });
       function closeMenu(returnFocus){
@@ -529,6 +545,7 @@
       document.addEventListener('keydown',function(event){if(event.key==='Escape'&&nav.classList.contains('open')){closeMenu(true);}});
       document.addEventListener('click',function(event){if(nav.classList.contains('open')&&!nav.contains(event.target)&&!menuButton.contains(event.target)){closeMenu(false);}});
       nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){closeMenu(false);});});
+      window.matchMedia('(max-width:900px)').addEventListener('change',function(){closeMenu(false);});
     }());
   </script>
 </body>
